@@ -16,4 +16,8 @@ deploy:
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN
   on:
+    all_branches: master
     tags: true
+    repo: ClearScore/cs-charts
+after_deploy:
+- npm run postrelease
