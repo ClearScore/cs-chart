@@ -1,19 +1,23 @@
 language: node_js
 node_js:
-  - "6.9"
-  - "7.1"
+- '6.9'
+- '7.1'
 sudo: false
 cache:
   directories:
-    - node_modules
-before_install:
+  - node_modules
+before_install: 
 script:
-  - "npm test"
+- npm test
 after_script:
- - "npm run coverage"
+- npm run coverage
 deploy:
   provider: npm
-  email: neil@roughcoder.com
+  email: $NPM_EMAIL
   api_key: $NPM_TOKEN
   on:
+    all_branches: master
     tags: true
+    repo: ClearScore/cs-charts
+after_deploy:
+- npm run postrelease
