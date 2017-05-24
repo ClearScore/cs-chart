@@ -175,6 +175,21 @@ $ yarn install
 $ npm test
 ```
 
+## Releasing
+
+A new version will automatically be released when the master branch is tagged.  
+
+To tag the master branch run `npm run release`.  This will run `standard-version` 
+
+The following will happen when you run `npm run release`.
+
+ - Bump the `package.json` version
+ - Commits the changes
+ - Pushes commit and tag to git
+ - Travis run tests
+ - Travis runs `npm run postrelease` (add release notes to version in GitHub)
+ - Travis pushes new build to NPM
+
 ## Contributing
 
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
