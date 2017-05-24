@@ -5,7 +5,7 @@ Lightweight opinionated chart library (line, donut and bar charts)
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Linux Build][travis-image]][travis-url]
   [![Test Coverage][coveralls-image]][coveralls-url]
-  [![Known Vulnerabilities](https://snyk.io/test/github/ClearScore/cs-charts/badge.svg)](https://snyk.io/test/github/ClearScore/verbose-dashboard)
+  [![Known Vulnerabilities](https://snyk.io/test/github/ClearScore/cs-charts/badge.svg)](https://snyk.io/test/github/ClearScore/cs-charts)
 
 ## Installation
 
