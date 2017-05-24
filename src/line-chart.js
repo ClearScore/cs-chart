@@ -228,7 +228,7 @@ module.exports = class {
      * @param thisValue
      * @returns {{x1: number, y1: number, x2: *, y2: *}}
      */
-    getHandles (index, thisValue) {
+    getHandles(index, thisValue) {
         // invariant(index, 'You have not supplied an index for the array to get the handles.');
 
         if (thisValue === null) {
@@ -273,8 +273,7 @@ module.exports = class {
                 x1 += this.handleOffset / 2;
                 y1 += (y1 - thisValue) / 2;
             }
-        }
-        else {
+        } else {
             y1 = thisValue;
             y2 = thisValue;
         }
