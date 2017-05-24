@@ -5,7 +5,7 @@ Lightweight opinionated chart library (line, donut and bar charts)
   [![NPM Downloads][downloads-image]][downloads-url]
   [![Linux Build][travis-image]][travis-url]
   [![Test Coverage][coveralls-image]][coveralls-url]
-  [![Known Vulnerabilities](https://snyk.io/test/github/ClearScore/verbose-dashboard/badge.svg)](https://snyk.io/test/github/ClearScore/verbose-dashboard)
+  [![Known Vulnerabilities](https://snyk.io/test/github/ClearScore/cs-charts/badge.svg)](https://snyk.io/test/github/ClearScore/verbose-dashboard)
 
 ## Installation
 
@@ -189,9 +189,13 @@ The following will happen when you run `npm run release`.
 
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
 
+### Commits
+
+This project follows the [Conventional Changelog Standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md).  Any pull requests that dont follow this standard will be rejected.
+
 ## License
 
-  [MIT](LICENSE)
+  [MIT](LICENSE) © [ClearScore](https://www.clearscore)
 
 [npm-image]: https://img.shields.io/npm/v/cs-charts.svg
 [npm-url]: https://npmjs.org/package/cs-charts
