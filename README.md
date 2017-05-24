@@ -136,20 +136,17 @@ The array of data to be plotted.
 
   * [Snap SVG](http://snapsvg.io/)
 
-## Development Guide
+## Examples
 
-Below it a quick start guide to development on `cs-charts`.  The following will spawn an express app hosting the examples
-intergrated using [nodemon](https://github.com/remy/nodemon).
+You can find examples of implementation within the `examples` folder.
 
-You can use either a local build or a docker-compose build.  The docker-compose build is useful if you want to target different node versions
-
-  Clone the Repo
+You can run the examples locally.
 
 ```bash
 $ git clone git@github.com:ProjectRogueOne/cs-charts.git
 ```
 
-  Install dependecies 
+  Install dependencies 
 
 ```bash
 $ yarn install
@@ -157,14 +154,12 @@ $ yarn install
 $ npm install
 ```
 
-Run the development express app
+Run the examples express app
 
 ```bash
-$ npm run dev
-# or
-$ docker-compose up
+$ npm run examples
 ```
-You should now be able to see the app on http://locahost:3000
+You should now be able to see the examples on http://locahost:3000
 
 ## Tests
 
@@ -179,15 +174,15 @@ $ npm test
 
 A new version will automatically be released when the master branch is tagged.  
 
-To tag the master branch run `npm run release`.  This will run `standard-version` 
+To tag the master branch run `npm run release`.
 
 The following will happen when you run `npm run release`.
 
  - Bump the `package.json` version
  - Commits the changes
  - Pushes commit and tag to git
- - Travis run tests
- - Travis runs `npm run postrelease` (add release notes to version in GitHub)
+ - Travis picks up tag and run tests
+ - Passes tests and Travis runs `npm run postrelease` (add release notes to version in GitHub)
  - Travis pushes new build to NPM
 
 ## Contributing

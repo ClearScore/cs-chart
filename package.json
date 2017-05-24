@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "examples": "node examples",
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "release": "standard-version && git push --follow-tags",
