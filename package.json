@@ -9,7 +9,7 @@
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "release": "standard-version && git push --follow-tags",
-    "postrelease": "conventional-github-releaser",
+    "releasenotes": "conventional-github-releaser",
     "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {

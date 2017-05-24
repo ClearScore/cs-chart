@@ -20,4 +20,4 @@ deploy:
     tags: true
     repo: ClearScore/cs-charts
 after_deploy:
-- npm run postrelease
+- npm run releasenotes
