@@ -4,12 +4,13 @@
   "description": "Lightweight opinionated chart library (line, donut and bar charts)",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "examples": "node examples",
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "release": "standard-version && git push --follow-tags",
-    "postrelease": "conventional-github-releaser"
+    "postrelease": "conventional-github-releaser",
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
   "homepage": "https://github.com/ClearScore/cs-charts#readme",
   "dependencies": {
     "babel-jest": "^20.0.3",
+    "coveralls": "^2.13.1",
     "jest": "^20.0.3"
   }
 }
