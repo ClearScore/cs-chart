@@ -13,10 +13,10 @@ after_script:
 - npm run coverage
 deploy:
   provider: npm
-  email: $NPM_EMAIL
-  api_key: $NPM_TOKEN
+  email: neil@roughcoder.com
+  api_key:
+    secure: IZVmdeMQnWOahK7/7Fvt20UhSBLCJ8JMn3uPuIgQmTFYdk3NoLF2Gyku8J1yIGDrWJIOyonEkUmj9HzkrI5qMXV5HvT6Eczdr+uzxCpUgpZvtAQ3OrNJZLHu3/YW9YU1y3ngBLiFem2sR4xrttmBV/XpYJq7ek8zKrmHQldeGT+vLGjlQcflydKCDT0TwezurgRc5olUeRsz7g0UoxXEj+pMr01p6LW+/VRz6fQPC6QsbGpwZa9d9S/KZtAUvkTRWolx4YMoK/KPCA8NOb3HlPRnzwt+gjx2rneGG33+vhuc+FhH4k2+qy7HFZZKUSw5xiYvkD1ESi4W3Pb70shVzWv0IFXAZZ1XbTATlkIWqc/GgkjLBAcW1F9Xp4bEnO8/bmxPZmsTQXXPqJld4fnPsPSNogU5jpIDqjpf6t3ytpLI34nTtdnWVfqMzVLeKeGu59+J8v714vhv08KbxTv5i7vOKtmLMfUj/iwBfBLsQ8qYOW+fA1sBxe8/962nNzbfrPXDJQL4SD62g/iG+Ah2ZeLxVSn8upVYakXgrVpe98EEY6miyojyRny5IKjwHb51HUmWBQayC4c1tmUP1q+fSI0d/nOIjsVE/XyNu+flrHRA2sXUB9+0K1ooTw+OkAzCi6bkQIshLeMP+nv8zeadszwg0W2pxzsegmLYjsoesf8=
   on:
-    all_branches: master
     tags: true
     repo: ClearScore/cs-charts
 after_deploy:
