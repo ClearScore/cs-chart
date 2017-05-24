@@ -6,4 +6,6 @@
 
 'use strict';
 
-module.exports = require('./lib/cs-charts');
+import charts from './src/cs-charts';
+
+module.exports = charts;

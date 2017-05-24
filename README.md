@@ -20,7 +20,7 @@ $ npm install cs-charts
   * Lightweight (3kb)
   * Line Charts
   * Bar Charts
-  * Animtated Donut
+  * Animated Donut
   * Mobile Friendly
   
 ## API
