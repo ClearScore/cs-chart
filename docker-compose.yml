@@ -1,0 +1,6 @@
+app:
+  build: .
+  volumes:
+    - "./lib:/src/lib"
+  ports:
+    - "3030:3000"
