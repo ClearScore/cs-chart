@@ -10,6 +10,7 @@ before_install:
 script:
   - "npm test"
 after_script:
+ - "npm run coverage"
 deploy:
   provider: npm
   email: neil@roughcoder.com
