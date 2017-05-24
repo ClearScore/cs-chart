@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <style>
+        body {
+            padding: 30px;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script>
+
+        function ready(fn) {
+            if (document.readyState != 'loading') {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            }
+        }
+
+        ready(function () {
+
+            var chart = new csCharts({
+                snap: window.Snap,
+                series: series
+            });
+
+            console.log(chart);
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+<h1>Examples</h1>
+
+<h2><a href="single-line-no-framework">Single Line, No Framework</a></h2>
+<h2><a href="multiple-lines-no-framework">Multiple Lines, No Framework</a></h2>
+<h2><a href="child-lines-no-framework">Child Lines, No Framework</a></h2>
+
+</body>
+</html>

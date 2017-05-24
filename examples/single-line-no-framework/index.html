@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="/demo.css">
+
+    <script>
+
+        function ready(fn) {
+            if (document.readyState != 'loading') {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            }
+        }
+
+        ready(function () {
+
+            var chart = new csCharts({
+                snap: window.Snap,
+                series: series
+            });
+
+            console.log(chart);
+
+        });
+    </script>
+
+</head>
+
+<body>
+<div class="demo-content">
+    <a href="/">Return to examples</a>
+    <h1>Single line, no framework</h1>
+    <p>An example of csCharts using a single data series and no framework (only JS&trade;) </p>
+</div>
+
+<div class="background">
+    <div class=container>
+        <div id="canvas" class=canvas></div>
+        <div id="scroll" class=canvas>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<script src="/lib/csCharts.min.js"></script>
+<script src="data.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+</body>
+</html>
