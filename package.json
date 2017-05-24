@@ -4,22 +4,12 @@
   "description": "Lightweight opinionated chart library (line, donut and bar charts)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "examples": "node examples",
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "release": "standard-version && git push --follow-tags",
     "postrelease": "conventional-github-releaser"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ],
-    "plugins": [
-      "transform-es2015-modules-umd",
-      "transform-es2015-spread",
-      "transform-object-rest-spread"
-    ]
   },
   "repository": {
     "type": "git",
@@ -29,6 +19,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ClearScore/cs-charts/issues"
+  },
+  "jest": {
+    "verbose": true
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -47,13 +40,16 @@
     "eslint-loader": "1.7.1",
     "express": "^4.15.3",
     "invariant": "^2.2.2",
+    "regenerator-runtime": "^0.10.5",
     "serve-static": "^1.12.3",
+    "standard-version": "^4.0.0",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "2.4.1",
-    "yargs": "^8.0.1",
-    "standard-version": "^4.0.0"
+    "yargs": "^8.0.1"
   },
   "homepage": "https://github.com/ClearScore/cs-charts#readme",
   "dependencies": {
+    "babel-jest": "^20.0.3",
+    "jest": "^20.0.3"
   }
 }
