@@ -179,6 +179,7 @@ To tag the master branch run `npm run release`.
 The following will happen when you run `npm run release`.
 
  - Bump the `package.json` version
+ - Updates CHANGELOG
  - Commits the changes
  - Pushes commit and tag to git
  - Travis picks up tag and run tests
