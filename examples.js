@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-app.set('port', process.env.PORT || 3020);
+app.set('port', process.env.PORT || 3000);
 
 const server = app.listen(app.get('port'), function () {
     console.log('csCharts Examples available on port ' + server.address().port);
