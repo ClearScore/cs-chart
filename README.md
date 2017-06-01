@@ -22,14 +22,14 @@ $ npm install cs-charts
   * Bar Charts
   * Animated Donut
   * Mobile Friendly
-  
+
 ## API
 
 ### csCharts(options)
 
 Boots up the `cs-charts`, creates all the elements, builds dynamic axis and create the charts
 
-- `options` an object that is passed to `cs-charts` on setup 
+- `options` an object that is passed to `cs-charts` on setup
 
 ### csCharts.version
 
@@ -102,7 +102,7 @@ Type: `string`<br>
 Default value: `false`
 
 When set to `true` this series will always be available even when viewing other series children.
- 
+
 ### series.parent
 Type: `string`<br>
 
@@ -146,12 +146,17 @@ You can run the examples locally.
 $ git clone git@github.com:ProjectRogueOne/cs-charts.git
 ```
 
-  Install dependencies 
+  Install dependencies
 
 ```bash
 $ yarn install
 # or
 $ npm install
+```
+
+Build npm
+```bash
+$ npm run build
 ```
 
 Run the examples express app
