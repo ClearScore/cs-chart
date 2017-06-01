@@ -394,7 +394,8 @@ module.exports = class {
             snap: this.snap,
             path: this.line,
             width: this.width,
-            label: this.labelFormatter
+            label: this.labelFormatter,
+            onChange: this.options.onChange
         };
 
         this.marker = new Marker(markerObj);

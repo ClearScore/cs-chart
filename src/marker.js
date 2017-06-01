@@ -37,6 +37,7 @@ module.exports = class {
         this.lastPoint = obj.lastPoint;
         this.firstPoint = obj.firstPoint;
         this.width = obj.width;
+        this.onChange = obj.onChange;
         this.screenWidth = this.scrollContainer.offsetWidth;
         this.labelFormatter = obj.label;
 
@@ -194,6 +195,9 @@ module.exports = class {
         this.updateVerticalLine();
         this.updatePoint();
         this.updateValues();
+        if (this.onChange) {
+            this.onChange();
+        }
         requestAnimationFrame(this.updatePoint.bind(this));
     };
 
