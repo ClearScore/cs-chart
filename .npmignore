@@ -1,3 +1,17 @@
 /src/
 /examples/
 /tests/
+.babelrc
+.gitignore
+.npmignore
+.travis.yml
+examples.js
+README.md
+webpack.config.js
+yarn.lock
+.idea
+coverage
+examples
+/libs
+tests
+.eslintrc
