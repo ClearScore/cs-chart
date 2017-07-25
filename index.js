@@ -6,6 +6,6 @@
 
 'use strict';
 
-import charts from './src/cs-charts';
+import charts from './libs/cs-charts';
 
-module.exports = charts;
+export default charts;
