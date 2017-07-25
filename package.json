@@ -1,10 +1,11 @@
 {
   "name": "cs-charts",
-  "version": "0.0.2",
+  "version": "0.1.6",
   "description": "Lightweight opinionated chart library (line, donut and bar charts)",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "prepublish": "babel index.js -o dist/index.js && babel libs -d dist/libs",
+    "test": "jest",
     "examples": "node examples",
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -40,18 +41,18 @@
     "eslint": "3.19.0",
     "eslint-loader": "1.7.1",
     "express": "^4.15.3",
-    "invariant": "^2.2.2",
     "regenerator-runtime": "^0.10.5",
     "serve-static": "^1.12.3",
     "standard-version": "^4.0.0",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "2.4.1",
-    "yargs": "^8.0.1"
-  },
-  "homepage": "https://github.com/ClearScore/cs-charts#readme",
-  "dependencies": {
+    "yargs": "^8.0.1",
     "babel-jest": "^20.0.3",
     "coveralls": "^2.13.1",
     "jest": "^20.0.3"
+  },
+  "homepage": "https://github.com/ClearScore/cs-charts#readme",
+  "dependencies": {
+    "invariant": "^2.2.2"
   }
 }
