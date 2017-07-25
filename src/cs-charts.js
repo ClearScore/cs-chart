@@ -225,7 +225,8 @@ module.exports = class {
                 formatter: function (value) {
                     return value;
                 }
-            }
+            },
+            onChange: this.options.onChange || function () {}
         };
 
         const newOptions = {

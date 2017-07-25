@@ -24,7 +24,10 @@
 
             var chart = new csCharts({
                 snap: window.Snap,
-                series: series
+                series: series,
+                onChange: function(data){
+                    console.log('data changed');
+                }
             });
 
             console.log(chart);
